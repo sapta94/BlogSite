@@ -3,6 +3,7 @@ import {BrowserRouter,Route} from 'react-router-dom'
 
 
 import Navbars from './Navbar'
+import SearchBar from './SearchBar'
 
 class App extends Component{
     componentDidMount(){
@@ -15,6 +16,7 @@ class App extends Component{
             <BrowserRouter>
                     <div>
                         <Navbars />
+                        <SearchBar />
                         {/* <Route exact path="/" component={Landing} /> */}
                     </div>
             </BrowserRouter>
