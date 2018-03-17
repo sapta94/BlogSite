@@ -6,7 +6,11 @@ class SearchBar extends React.Component{
         return(
             <div className="header-img">
                 <Grid columns={2} centered  >
-                    
+                    <Grid.Row>
+                        <Grid.Column>
+                            <span style={{fontFamily:'Acme, sans-serif',fontSize:'40px'}}>Connection Brains</span>
+                        </Grid.Column>
+                    </Grid.Row>
                     <Grid.Row>
                         <SearchField/>
                     </Grid.Row>  

@@ -33,7 +33,7 @@ class Navbar extends Component {
       <Menu stackable>
         <Menu.Item>
           <img src='/images/logo.jpg' />
-          AuthorsDaddy
+          <span style={{fontFamily: 'Comfortaa, cursive',fontSize:'18px'}}>AuthorsDaddy</span>
         </Menu.Item>
 
                 
