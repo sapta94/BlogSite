@@ -22,12 +22,9 @@ class Navbar extends Component {
                 {'Sign-in'}<i className="fa fa-user" style={{fontSize:"20px",marginLeft:'5px'}}></i>
                 </Menu.Item>
     
-    if(this.state.isModal==true){
-        var modal = <ModalExample modalNode={signIn}/>
-    }
-    else{
-        var modal = <div></div>
-    }
+    var register= <Menu.Item position='right' name="register"  onClick={this.handleItemClick}>
+                    <b>Not a Member? </b> Register Here <i class="fa fa-registered" style={{fontSize:"20px",marginLeft:'5px'}}></i>
+                </Menu.Item>
 
     return (
       <Menu stackable>
@@ -35,8 +32,6 @@ class Navbar extends Component {
           <img src='/images/logo.jpg' />
           <span style={{fontFamily: 'Comfortaa, cursive',fontSize:'18px'}}>AuthorsDaddy</span>
         </Menu.Item>
-
-                
 
         <Menu.Item
           name='testimonials'
@@ -60,10 +55,44 @@ class Navbar extends Component {
                 <Form.Field>
                     <Checkbox label='I agree to the Terms and Conditions' />
                 </Form.Field>
-                <Button primary><i className="fa fa-sign-in" style={{fontSize:"20px",marginLeft:'5px'}}></i>Login</Button>
+                <Button primary>Login<i className="fa fa-sign-in" style={{fontSize:"15px",marginLeft:'5px'}}></i></Button>
                 </Form>
               </Modal.Content>
             </Modal>
+
+            <Modal trigger={register}>
+              <Modal.Header>Register Yourself</Modal.Header>
+              <Modal.Content>
+              <Form>
+                <Form.Field>
+                    <label>First Name</label>
+                    <input placeholder='Firstname here..' />
+                </Form.Field>
+                <Form.Field>
+                    <label>Last Name</label>
+                    <input type="text" placeholder='Surname here...' />
+                </Form.Field>
+                <Form.Field>
+                    <label>Enter Your Email</label>
+                    <input placeholder='Enter your Email' />
+                </Form.Field>
+                <Form.Field>
+                    <label>Password</label>
+                    <input type="password" placeholder='Password Here' />
+                </Form.Field>
+                <Form.Field>
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder='Password Here' />
+                </Form.Field>
+                <Form.Field>
+                    <Checkbox label='I agree to the Terms and Conditions' />
+                </Form.Field>
+                <Button primary>Submit<i className="fa fa-sign-in" style={{fontSize:"15pxpx",marginLeft:'5px'}}></i></Button>
+                </Form>
+              </Modal.Content>
+            </Modal>
+
+           
       </Menu>
     )
   }
