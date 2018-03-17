@@ -5,8 +5,11 @@ class SearchBar extends React.Component{
     render(){
         return(
             <div className="header-img">
-                <Grid>
-                   <SearchField/>
+                <Grid columns={2} centered  >
+                    
+                    <Grid.Row>
+                        <SearchField/>
+                    </Grid.Row>  
                 </Grid>
             </div>
         )
@@ -19,9 +22,10 @@ class SearchField extends React.Component{
     }
     render(){
         return(
-            <Grid.Column width={50}>
+            <Grid.Column>
             <Search
               value={'Search here'}
+              size='huge'
               {...this.props}
             />
           </Grid.Column>
