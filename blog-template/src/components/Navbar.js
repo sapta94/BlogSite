@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Button, Header, Image, Modal,Form,Checkbox } from 'semantic-ui-react'
+import DatePicker from 'react-datepicker'
 
 class Navbar extends Component {
 
   
-  state = {}
+  state = {startDate:Date.now()}
 
   handleItemClick = (e, { name }) => {
       this.setState({ activeItem: name,isModal:true })
@@ -71,6 +72,13 @@ class Navbar extends Component {
                 <Form.Field>
                     <label>Last Name</label>
                     <input type="text" placeholder='Surname here...' />
+                </Form.Field>
+                <Form.Field>
+                    <label>Date of birth</label>
+                    <DatePicker
+                        selected={this.state.startDate}
+                        onChange={this.handleChange}
+                    />
                 </Form.Field>
                 <Form.Field>
                     <label>Enter Your Email</label>
