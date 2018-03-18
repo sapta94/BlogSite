@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Button, Header, Image, Modal,Form,Checkbox } from 'semantic-ui-react'
-import DatePicker from 'react-datepicker'
+import DayPickerInput from 'react-day-picker/DayPickerInput'
 
 class Navbar extends Component {
 
@@ -75,10 +75,7 @@ class Navbar extends Component {
                 </Form.Field>
                 <Form.Field>
                     <label>Date of birth</label>
-                    <DatePicker
-                        selected={this.state.startDate}
-                        onChange={this.handleChange}
-                    />
+                    <DayPickerInput format="DD/MM/YYYY" placeholder="enter DOB"  />
                 </Form.Field>
                 <Form.Field>
                     <label>Enter Your Email</label>
