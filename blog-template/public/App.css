@@ -12,3 +12,9 @@
   @media only screen and (max-width: 500px) {
     .prompt {
       width: auto; } }
+
+.DayPickerInput {
+  width: 860px; }
+  @media only screen and (max-width: 500px) {
+    .DayPickerInput {
+      width: 330px; } }
