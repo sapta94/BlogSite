@@ -17,9 +17,18 @@
 }
 
 .DayPickerInput{
-    
+
         width:860px;
         @media only screen and (max-width: 500px) {
             width: 330px;
          }
+}
+
+.stat-bar{
+    border: 5px solid #F77B7B;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    background: linear-gradient(to bottom right, red, yellow);
 }

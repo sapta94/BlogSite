@@ -8,7 +8,7 @@ class SearchBar extends React.Component{
                 <Grid columns={2} centered  >
                     <Grid.Row>
                         <Grid.Column>
-                            <span style={{fontFamily:'Acme, sans-serif',fontSize:'40px'}}>Connection Brains</span>
+                            <center><span style={{fontFamily:'Acme, sans-serif',fontSize:'40px'}}>Let's Write Together</span></center>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
