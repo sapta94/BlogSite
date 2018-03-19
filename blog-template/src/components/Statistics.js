@@ -24,41 +24,43 @@ class Statistics extends Component{
         };
         return(
             <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)'}}>
-                <center><h1 style={{fontFamily:'Montserrat, sans-serif'}}>--Some Statistics--</h1></center>
-            <Grid container columns={3}>
-                <Grid.Row>
-                    <Grid.Column>
-                    <div class="stat-bar">
-                        <br/>
-                        <h1 className="title">Authors</h1>
-                        <div className="exam-div">
-                            <AnimationCount {...settings}/>
+                <center><h1 style={{fontFamily:'Montserrat, sans-serif',fontSize:'35px'}}>--Some Statistics--</h1></center>
+                <div class="col-md-4">
+                
+                        <div class="stat-bar">
+                            <br/>
+                            <h1 className="title">Authors</h1>
+                            <div className="exam-div">
+                                <AnimationCount {...settings}/>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="col-md-4>">
+                    
+                        <div class="stat-bar">
+                            <br/>
+                            <h1 className="title">Articles</h1>
+                            <div className="exam-div">
+                                <AnimationCount {...settings}/>
+                            </div>
                         </div>
                     </div>
-                    </Grid.Column>
-                    <Grid.Column>
-                    <div class="stat-bar">
-                        
-                        <br/>
-                        <h1 className="title">Articles</h1>
-                        <div className="exam-div">
-                            <AnimationCount {...settings}/>
+                
+                <div class="col-md-4">
+                    
+                        <div class="stat-bar">
+                            <br/>
+                            <h1 className="title">Subscribers</h1>
+                            <div className="exam-div">
+                                <AnimationCount {...settings}/>
+                            </div>
                         </div>
-                    </div>
-                    </Grid.Column>
-                    <Grid.Column>
-                    <div class="stat-bar">
-                        <br/>
-                        <h1 className="title">Subscribers</h1>
-                        <div className="exam-div">
-                            <AnimationCount {...settings}/>
-                        </div>
-                    </div>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-            
-            </div>
+                    
+                </div>
+                    
+                </div>
+    
         )
     }
 }
