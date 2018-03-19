@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Grid } from 'semantic-ui-react'
-import Counter from 'react-counter'
 import AnimationCount from 'react-count-animation'
 import 'react-count-animation/dist/count.min.css';
+
 
 class Statistics extends Component{
     constructor(props){
@@ -24,6 +24,7 @@ class Statistics extends Component{
         };
         return(
             <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)'}}>
+                <center><h1 style={{fontFamily:'Montserrat, sans-serif'}}>--Some Statistics--</h1></center>
             <Grid container columns={3}>
                 <Grid.Row>
                     <Grid.Column>
@@ -37,6 +38,7 @@ class Statistics extends Component{
                     </Grid.Column>
                     <Grid.Column>
                     <div class="stat-bar">
+                        
                         <br/>
                         <h1 className="title">Articles</h1>
                         <div className="exam-div">
