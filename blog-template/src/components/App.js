@@ -5,6 +5,7 @@ import {BrowserRouter,Route} from 'react-router-dom'
 import Navbars from './Navbar'
 import SearchBar from './SearchBar'
 import Statistics from './Statistics'
+import TopBlogger from './TopBlogger'
 import TopBlogs from './TopBlogs'
 
 class App extends Component{
@@ -20,6 +21,7 @@ class App extends Component{
                         <Navbars />
                         <SearchBar />
                         <Statistics />
+                        <TopBlogger />
                         <TopBlogs />
                         {/* <Route exact path="/" component={Landing} /> */}
                     </div>
