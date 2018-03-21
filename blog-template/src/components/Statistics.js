@@ -25,8 +25,9 @@ class Statistics extends Component{
         return(
             <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)'}}>
                 <center><h1 style={{fontFamily:'Montserrat, sans-serif',fontSize:'35px'}}>--Some Statistics--</h1></center>
-                <div class="col-md-4">
-                
+                <Grid container>
+                    <Grid.Row>
+                        <Grid.Column mobile={9} tablet={6} computer={4}>
                         <div class="stat-bar">
                             <br/>
                             <h1 className="title">Authors</h1>
@@ -34,10 +35,8 @@ class Statistics extends Component{
                                 <AnimationCount {...settings}/>
                             </div>
                         </div>
-                    
-                </div>
-                <div class="col-md-4>">
-                    
+                        </Grid.Column>
+                        <Grid.Column mobile={9} tablet={6} computer={4}>
                         <div class="stat-bar">
                             <br/>
                             <h1 className="title">Articles</h1>
@@ -45,10 +44,8 @@ class Statistics extends Component{
                                 <AnimationCount {...settings}/>
                             </div>
                         </div>
-                    </div>
-                
-                <div class="col-md-4">
-                    
+                        </Grid.Column>
+                        <Grid.Column mobile={9} tablet={6} computer={4}>
                         <div class="stat-bar">
                             <br/>
                             <h1 className="title">Subscribers</h1>
@@ -56,8 +53,18 @@ class Statistics extends Component{
                                 <AnimationCount {...settings}/>
                             </div>
                         </div>
-                    
-                </div>
+                        </Grid.Column>
+                        <Grid.Column mobile={9} tablet={6} computer={4}>
+                        <div class="stat-bar">
+                            <br/>
+                            <h1 className="title">Viewers</h1>
+                            <div className="exam-div">
+                                <AnimationCount {...settings}/>
+                            </div>
+                        </div>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
                     
                 </div>
     
