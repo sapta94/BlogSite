@@ -5,6 +5,7 @@ import {BrowserRouter,Route} from 'react-router-dom'
 import Navbars from './Navbar'
 import SearchBar from './SearchBar'
 import Statistics from './Statistics'
+import TopBlogs from './TopBlogs'
 
 class App extends Component{
     componentDidMount(){
@@ -19,6 +20,7 @@ class App extends Component{
                         <Navbars />
                         <SearchBar />
                         <Statistics />
+                        <TopBlogs />
                         {/* <Route exact path="/" component={Landing} /> */}
                     </div>
             </BrowserRouter>
