@@ -16,7 +16,8 @@ const items = [
     header: 'Food Blog',
     description: 'Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.',
     meta: 'ROI: 27%',
-  },
+  }
+ 
 ]
 
 class TopBlogs extends React.Component{
@@ -30,16 +31,16 @@ class TopBlogs extends React.Component{
 
     render(){
         return(
-            <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)'}}>
+            <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)',padding:'80px'}}>
             <center><h1 style={{fontFamily:'Montserrat, sans-serif',fontSize:'35px'}}>--Top Blogs--</h1></center>
             <br/>
-            <Grid container>
-                <Grid.Row>
-                    <Grid.Column mobile={9} tablet={6} computer={4} >
-                        <Card.Group items={items} />
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+            
+               
+                    
+                        <Card.Group centered items={items} />
+                    
+                
+            
             </div>
         )
     }
