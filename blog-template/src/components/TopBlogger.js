@@ -13,12 +13,13 @@ class TopBlogger extends React.Component{
 
     render(){
         return(
-            <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)'}}>
+            <div style={{padding:'90px'}}>
             <center><h1 style={{fontFamily:'Montserrat, sans-serif',fontSize:'35px'}}>--Top Bloggers--</h1></center>
+            <br/>
             <br/>
             <Grid container>
                 <Grid.Row>
-                    <Grid.Column mobile={9} tablet={6} computer={4} >
+                    <Grid.Column mobile={9} tablet={8} computer={4} >
                         <Card
                             image='https://www.nexia-sabt.co.za/wp-content/uploads/2016/05/dummy.jpg'
                             header='Elliot Baker'
