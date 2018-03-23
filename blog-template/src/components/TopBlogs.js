@@ -33,14 +33,8 @@ class TopBlogs extends React.Component{
         return(
             <div style={{background: 'linear-gradient(to bottom right, #91ada2, #05c67b)',padding:'80px'}}>
             <center><h1 style={{fontFamily:'Montserrat, sans-serif',fontSize:'35px'}}>--Top Blogs--</h1></center>
-            <br/>
-            
-               
-                    
-                        <Card.Group centered items={items} />
-                    
-                
-            
+            <br/>                  
+                <Card.Group centered items={items} />
             </div>
         )
     }
