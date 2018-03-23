@@ -38,3 +38,24 @@
         transform: scale(1.1);
     }
 }
+
+.more-button{
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding:15px;
+
+    &:hover{
+        background-color: white !important;
+        color:black
+    }
+    @media  (max-width: 768px) {
+        font-size: 10px;
+        font-family: sans-serif;
+        padding:10px;
+    }
+
+}
