@@ -56,6 +56,9 @@ class TopBlogger extends React.Component{
                         />
                     </Grid.Column>
                 </Grid.Row>
+                <Grid.Row centered>
+                    <button className="more-button">View More</button>
+                </Grid.Row>
             </Grid>
             </div>
         )
