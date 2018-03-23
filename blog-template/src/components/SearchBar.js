@@ -5,7 +5,8 @@ class SearchBar extends React.Component{
     render(){
         return(
             <div className="header-img">
-                <Grid columns={2} centered  >
+                
+                <Grid verticalAlign='bottom' columns={2} centered  >
                     <Grid.Row>
                         <Grid.Column>
                             <center><span style={{fontFamily:'Acme, sans-serif',fontSize:'40px'}}>Let's Write Together</span></center>
@@ -15,6 +16,7 @@ class SearchBar extends React.Component{
                         <SearchField/>
                     </Grid.Row>  
                 </Grid>
+
             </div>
         )
     }
